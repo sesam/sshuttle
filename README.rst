@@ -45,3 +45,13 @@ http://sshuttle.readthedocs.org/
 
 The documentation for the latest development version is available at:
 http://sshuttle.readthedocs.org/en/latest/
+
+TL;DR
+-----
+
+- Tunnel all your traffic via just any old ssh shell account
+- Install and use: pip install sshuttle _then_ sshuttle --dns -r username@sshserver 0/0
+- You computer must run:
+  - Linux (iptables DNAT, REDIRECT, ttl OR more complicated TPROXY recvmsg via PyXAPI if you need full IPv6 and UDP tunneling)
+  - Mac/BSD (pf via pfctl)
+  - Windows: not yet supported (vagrant up)
